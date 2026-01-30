@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+    <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+            <title>Дипломная работа</title>
+            <link rel="stylesheet" type="text/css" href="css/swiper-bundle.css">
+            <link rel="stylesheet" type="text/css" href="css/styles.css">
+            <link rel="stylesheet" type="text/css" href="css/animation.css">
+            <link rel="stylesheet" type="text/css" href="css/popups.css">
+            <link rel="stylesheet" type="text/css" href="css/media.css">
+            <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0.16/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0.16/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0.16/favicon-16x16.png">
+            <link rel="manifest" href="images/favicon_package_v0.16/site.webmanifest">
+            <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+            <meta name="msapplication-TileColor" content="#da532c">
+            <meta name="theme-color" content="#ffffff">  
+            <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+            <script src="scripts/jquery-3.5.0.min.js"></script>
+            <script src="scripts/jquery.inputmask.min.js"></script>
+            <script src="scripts/jquery.validate.min.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src="scripts/script.js"></script>  
+        </head>
+        <body onload="canvas();">
+            <div class="popup box-form">
+                <button class="button_close"></button>
+                <form class="form popup__form">
+                    <input type="hidden" name="project_name" value="Адрес">
+                    <input type="hidden" name="admin_email" value="katrin-moonmay@yandex.ru">
+                    <input type="hidden" name="form_subject" value="Заявка">
+                   
+                    <h1 class="form__title">Заказать звонок</h1>
+                    <p class="form__subtitle">Имя
+                    <input type="text" class="form__input" name="Имя"></p>
+                    <p class="form__subtitle">Телефон
+                    <input type="tel" class="form__input form__tel" name="Телефон"></p>
+                    <p class="form__subtitle">Адрес электронной почты
+                    <input type="email" class="form__input" name="Почта"></p>
+                    <textarea class="form__textarea" name="comment" placeholder="Задайте мне свой вопрос"></textarea>
+                    <input type="submit" value="Отправить" class="button button_orange form__button">
+                </form>
+                <div class="popup__success success ">
+                    <p class="success__title">Ваше обращение успешно отправлено!</p>
+                    <button class="button button_orange success__button">Вернуться на главную</button>
+                </div>
+            </div>
+            <nav class="nav container">
+               <ul class="nav__list">
+                   <li class="nav__item"><a href="#services">Услуги</a></li> 
+                   <li class="nav__item"><a href="#example">Портфолио</a></li>
+                   <li class="nav__item"><a href="#cost">Стоимость</a></li> 
+               </ul> 
+               <button class="nav__button_size_m"></button>
+               <!-- выпадающее меню -->
+               <ul class="nav__list_m popup">
+                    <li class="nav__item nav__item_m"><a href="#services">Услуги</a></li>
+                    <li class="nav__item nav__item_m"><a href="#example">Портфолио</a></li>
+                    <li class="nav__item nav__item_m"><a href="#cost">Стоимость</a></li>
+                </ul>  <!-- Выпадающее меню -->
+               <div class="nav__item nav__btn-container">
+                <span class="nav__phone">+7 (911) 902-53-68</span>
+                <button class="button button_call">Заказать звонок</button>
+                <button class="button nav__button_size_s"></button>
+               </div>
+            </nav>
+            
+            <div class="about">   
+            <!-- Разлетающиеся теги -->
+                <div class="tags about__tags">
+                    <p class="about__tag flying-tag about__div">&lt;div&gt;</p>
+                    <p class="about__tag flying-tag about__div2">&lt;div&gt;</p>
+                    <p class="about__tag flying-tag about__css">{ }</p>
+                    <p class="about__tag flying-tag about__close">&lt;/&gt;</p>
+                    <p class="about__tag flying-tag about__close2">&lt;/&gt;</p>
+                    <p class="about__tag flying-tag about__hash">#</p>
+                </div>  <!-- Разлетающиеся теги -->
+                <div class="background">
+                    <canvas height='630' width='813' id='figure'>Ваш браузер не поддерживает Canvas</canvas>
+                </div>
+                <img src="images/silhouette.png" alt="Дмитрий Алексеев" class="photo">
+                <header class="main container">
+                    <h1 class="main__header">Катерина Стасевич</h1>
+                    <p class="main__subtitle">Frontend-разработчик и веб-верстальщик</p>
+                    <button class="button main__button button_orange">Узнать больше</button>
+                </header>
+            </div>  
+            <main class="services container" id="services">
+                <h2 class="services__header header">Что я делаю</h2>
+                <ul class="services__list">
+                    <li class="services__item services__item_layout">
+                        <p class="services__subtitle">Вёрстка лендинг-страниц и&nbsp;сайтов&nbsp;любой сложности</p>
+                    </li>
+                    <li class="services__item services__item_adaptive">
+                        <p class="services__subtitle">Адаптивная вёрстка под все браузеры и устройства</p>
+                    </li>
+                    <li class="services__item services__item_frontend">
+                        <p class="services__subtitle">Frontend-разработка и&nbsp;программирование</p>
+                    </li>
+                    <li class="services__item services__item_correction">
+                        <p class="services__subtitle">Исправление и доработка существующей вёрстки</p>
+                    </li>
+                </ul>
+                <button class="button button_orange services__button button_center">Узнать стоимость</button>
+            </main> 
+            <section class="container example" id="example">
+                <h2 class="header">Примеры моих работ</h2>
+                <div class="example__button-container container">
+                    <button aria-label="Предыдущий слайд" class="button_shadow example__button"></button>
+                    <button aria-label="Следующий слайд" class="button_shadow example__button_reverse"></button>
+                </div>
+                <div class="swiper-container">
+                    <div class="container swiper-wrapper">
+                        <article class="example__article swiper-slide">
+                            <img class="example__image" src="images/vera.png" alt="Сайт психолога Веры Антоновой">
+                            <h4 class="example__subtitle">Сайт психолога Веры Антоновой</h4>
+                        </article>
+                        <article class="example__article swiper-slide">
+                            <img class="example__image" src="images/child.png" alt="Сайт магазина детской одежды">
+                            <h4 class="example__subtitle">Сайт магазина детской одежды</h4>
+                        </article>
+                        <article class="example__article swiper-slide">
+                            <img class="example__image" src="images/fishing.png" alt="Сайт магазина Рыболов">
+                            <h4 class="example__subtitle">Сайт магазина «Рыболов»</h4>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button class="button button_orange button_center">Заказать проект</button>
+            </section>
+            <div class="cost-bar" id="cost">
+                <div class="cost-bar__tags tags">
+                    <p class="cost-bar__tag flying-tag cost-bar__div">&lt;div&gt;</p>
+                    <p class="cost-bar__tag flying-tag cost-bar__css2">{ }</p>
+                    <p class="cost-bar__tag flying-tag cost-bar__css">{ }</p>
+                    <p class="cost-bar__tag flying-tag cost-bar__close">&lt;/&gt;</p>
+                </div>  
+                <section class="container">
+                    <h2 class="cost-bar__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.* </h2>
+                    <p class="cost-bar__subtitle">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,<br> в&nbsp;зависимости от сложности задач.</p>
+                </section>
+            </div>
+            <footer class="footer container">
+                <nav class="footer__column footer__left-column">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#services">Услуги</a></li>
+                        <li class="footer__nav-item"><a href="#example">Портфолио</a></li>
+                        <li class="footer__nav-item"><a href="#cost">Стоимость</a></li>
+                    </ul>
+                </nav>
+                <address class="footer__column footer__center-column">
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a href="#"><i class="icofont-phone"></i>
+                                +7 (911) 902-53-68</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="#"><i class="icofont-letter"></i>
+                                katrin-moonmay@yandex.ru</a>
+                        </li>
+                    </ul> 
+                </address>
+                <div class="footer__column">
+                    <button class="button button_call">Заказать звонок</button>
+                    <button class="button button_orange button_center footer__button">Заказать звонок</button>
+                    <ul class="links footer__links">
+                        <li class="links__item links__item_vk"><a href="#"></a></li>
+                        <li class="links__item links__item_fb"><a href="#"></a></li>
+                        <li class="links__item links__item_twitter"><a href="#"></a></li>
+                        <li class="links__item links__item_inst"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </footer>
+            <div class="author">
+                <p class="author__copyright">©Дмитрий Алексеев, 2016-2018</p>
+            </div>
+        </body>
+    </html>
