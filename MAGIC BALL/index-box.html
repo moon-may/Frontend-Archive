@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Шар предсказаний</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="btn-container">
+                <button class="button" id="round">Крути!</button>
+                <button class="button hidden" id="reround">Попробовать снова</button>
+            </div>
+            <main class="main ball">
+                <div class="answer" id="answer"></div>
+            </main>
+        </div>
+        
+
+
+
+<script>
+        round.onclick = getAnswer;
+
+        function getAnswer () {
+
+            let listAnwers = ['Определенно, да!', 'Будущее туманно', 'Не надейся', 'Скорее, да', 'Все возможно', 'Спроси позже', 'Перспективы не очень хорошие', 'Лучше не рассказывать', 'Знаки говорят — «да»', 'Вероятнее всего', 'Хорошие перспективы', 'Весьма сомнительно'];
+
+            let rand = Math.floor(Math.random() * listAnwers.length);
+
+            let answ = document.createElement('p');
+            answ.class = 'main__answer';
+            answ.innerHTML = listAnwers[rand];
+            answer.append(answ);
+            round.remove();
+            reround.classList.add('block');
+
+            console.log(listAnwers[rand]);
+        };
+
+        reround.onclick = newChance;
+        
+        function newChance () {
+            location.reload();
+        };
+
+
+
+</script>
+    </body>
+</html>
