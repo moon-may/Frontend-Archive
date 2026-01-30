@@ -1,0 +1,93 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: #00cc00;
+    z-index: 10;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 100%;
+    padding: 0 20px;
+}
+.form__button-close {
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    align-self: flex-end;
+}
+.form__input {
+    border: 2px solid #00CC00;
+    height: 50px;
+}
+.form__textarea {
+    margin-top: 30px;
+    height: 150px;
+    border: 2px solid #00CC00;
+}
+.form__submit {
+    color: #fff;
+    background-color: #00CC00;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    border: none;
+    margin-top: 30px;
+}
+
+.main__question {
+    display: none;
+    padding: 20px;
+    text-align: end;
+}
+.products__text {
+    position: absolute;
+    top: auto;
+    margin-top: 20px;
+    border: 1px solid #0b69d7;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+}
+.products__button-close {
+    border: none;
+    background-color: #fff;
+}
+.nav-mobile {
+    display: none;
+    padding-inline-start: 0;
+    background-color: #fff;
+    width: 100vw;
+    height: auto;
+}
+.header__nav-item {
+    list-style: none;
+    height: 50px;
+    font-size: 24px;
+    border-bottom: 2px solid #00cc00;
+    padding: 10px 0 0 40px;   
+}
+.header__nav-item a {
+    text-decoration: none;
+    color: #000;
+}
+.phone {
+    display: none;
+    background-color: #fff;
+    height: 50px;
+}
+.header__btn-close {
+    border: none;
+    background-color: #fff;
+    float: right;
+}
+.phone-number {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>CoreHydroponics</title>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/popup_styles.css">
+        <link rel="stylesheet" type="text/css" href="css/media.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        
+        <script src="script/jquery-3.5.0.min.js"></script>
+        <script src="script/jquery.inputmask.min.js"></script>
+        <script src="script/jquery.validate.min.js"></script>
+        <script src="script/main.js"></script>
+    </head>
+    <body>
+        <header class="header flex-container">
+            <div class="black-bar">
+                <ul class="black-bar__list">
+                    <li class="black-bar__item">
+                        <p><a href="#">Заполнить заявку</a></p>
+                    </li>
+                    <li class="black-bar__item">
+                        <p><a href="#">Заказать звонок</a></p>
+                    </li>
+                    <li class="black-bar__item">
+                        <p>+7-111-222-33-55</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <ul class="header__nav_lg fixed-container">
+                    <li class="header__nav-item_lg">
+                        <a href="#main">О проекте</a>
+                    </li>
+                    <li class="header__nav-item_lg">
+                        <a href="#products">Продукты</a>
+                    </li>
+                    <li class="header__nav-item_lg">
+                        <a href="#partner">Партнеры</a>
+                    </li>
+                    <li class="header__nav-item_lg">
+                        <a href="#working-team">Команда</a>
+                    </li>
+                </ul>
+            </div>
+        <div class="green-bar">
+            <nav class="header__nav-bar">
+                <ul class="popup nav-mobile">
+                    <li class="header__nav-item">
+                        <a href="#main">О проекте</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#products">Продукты</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#partner">Партнеры</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#working-team">Команда</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#order">Оформить заказ</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a>Закрыть меню</a>
+                    </li>
+                </ul>
+                    <span class="fa fa-bars fa-2x"></span>
+                    <h1 class="header__title">CoreHydroponics</h1>
+                    <span class="fa fa-phone fa-2x"></span>
+                <div class="popup phone">
+                    <button type="button" class="header__btn-close">Закрыть</button>
+                    <p class="phone-number">Номер телефона</p> 
+                </div>
+            </nav>
+        </div>  
+            <p class="header__text"> Автоматические фермы<br>для выращивания<br>свежих фруктов и&nbspовощей<br>круглый год</p>
+            <button type="button" class="button header__button order-btn">ОФОРМИТЬ ЗАКАЗ</button>
+        </header>
+        <main class="main flex-container fixed-container" id="main">
+                <h1 class="main__header">Мы создали <span class="blue-font">CoreHydroponics</span>,<br> чтобы сделать гидропонику проще и доступнее для вас!</h1>
+                <p class="main__subtitle"><img class="main__image" alt="greenhouse-2139527_640.jpg" src="img/greenhouse-2139527_640.jpg" align="right"><a href="#products" class="blue-font main__link">Наши продукты</a> — это автоматизированные фермы на гидропоники для дома, офиса и выращивания на продажу.<br><br>
+                Мы сами обслуживаем фермы, которые продаем и гарантируем урожайность.
+                </p>
+                <button class="button main__button" type="button">Что такое гидропоника?</button>
+                <p class="main__question">Что такое гидропоника?  Все просто - это способ выращивания растений на искусственных средах без почвы. Питание растения получают из питательного раствора, окружающего корни.</p>
+        </main>
+        <section class="products flex-container fixed-container" id="products">
+            <h1 class="title">Наши продукты</h1>
+            <ul class="products__list list">
+                <li class="products__card">
+                    <img src="img/hydroponicAtHome.jpg" class="products__img" alt="Домашняя гидропоника">
+                    <p class="products__subtitle">Домашняя гидропоника</p>
+                    <button type="button" class="products__button button">Узнать больше</button>
+                    <div class="popup products__text">
+                        <p>Мы создаем домашние фермы для максимально простого выращивания растений при помощи гидропоники. Например, салат к вашему ужину.
+                            Модуль прост в эксплуатации: удобрения заправляются картриджами, модуль легко обслуживается. </p>
+                        <button type="button" class="products__button-close">Закрыть</button>
+                    </div> 
+                </li>
+                <li class="products__card">
+                    <img src="img/hydroponicsAtInterier.jpg" class="products__img" alt="Гидропоника в интерьере">
+                    <p class="products__subtitle">Гидропоника в интерьере</p>
+                    <button type="button" class="products__button button">Узнать больше</button>
+                    <div class="popup products__text">
+                        <p>Гидропонные фермы можно применять в интерьере для создания приятной обстановки. Ферма создается индивидуально под каждого заказчика и помещения, в котором она будет располагаться. Такие фермы можно применить в ресторанах или офисных помещениях. </p>
+                        <button type="button" class="products__button-close">Закрыть</button>
+                    </div>
+                </li>
+                <li class="products__card">
+                    <img src="img/promHydroponics.jpg" class="products__img" alt="Промышленная гидропоника">
+                    <p class="products__subtitle">Промышленная гидропоника</p>
+                    <button type="button" class="products__button button">Узнать больше</button>
+                    <div class="popup products__text">
+                        <p>Гидропоника - эффективный метод выращивания растений. Эта технология приносит урожай круглый год, растения развиваются быстрее, чем в земле, а фермы можно делать многоэтажными. Кроме того, фермы на гидропонике не подвергаются атакам вредителей, а в растения не попадают вредные осадки, находящиеся в почве.</p>
+                        <button type="button" class="products__button-close">Закрыть</button>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" class="button button_blue order-btn">ЗАКАЗАТЬ СЕЙЧАС</button>
+        </section>
+        <section class="working-team flex-container fixed-container" id="working-team">
+            <h1 class="title">Наша команда</h1>
+            <ul class="working-team__list list">
+                <li class="working-team__card">
+                    <img src="img/1557760809_9.jpg" class="working-team__img" alt="name">
+                    <p class="working-team__subtitle">Name</p>
+                </li>
+                <li class="working-team__card">
+                    <img src="img/1557760809_9.jpg" class="working-team__img" alt="name">
+                    <p class="working-team__subtitle">Name</p>
+                </li>
+                <li class="working-team__card">
+                    <img src="img/1557760809_9.jpg" class="working-team__img" alt="name">
+                    <p class="working-team__subtitle">Name</p>
+                </li>
+                <li class="working-team__card">
+                    <img src="img/1557760809_9.jpg" class="working-team__img" alt="name">
+                    <p class="working-team__subtitle">Name</p>
+                </li>
+            </ul>
+        </section>
+        <!--
+        <section class="partner flex-container fixed-container" id="partner">
+            <h1 class="title">Наши партнеры</h1>
+        </section>    Партнеры -->
+        <div class="flex-container button-container fixed-container">
+            <button type="button" class="button order-button partner-btn">Стать партнером</button>
+            <button type="button" class="button order-button order-btn" id="order">Сделать заказ</button>
+        </div>
+        <footer class="footer">
+            <div class="green-bar">
+                <h1 class="footer__header">CoreHydroponics</h1>
+            </div>
+            <div class="footer__links">
+           <!--
+спрайт с соцсетями
+           --> 
+            </div>
+            <ul class="footer__nav fixed-container">
+                <li class="footer__nav-item">
+                    <a href="#main">О проекте</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#products">Продукты</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#partner">Партнеры</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#working-team">Команда</a>
+                </li>
+            </ul>
+            <div class="flex-container">
+                <button class="footer__order-button order-btn" type="button">Сделать заказ</button>
+            </div> 
+        </footer>
+        <div class="popup order-form">
+            <form class="form">
+                <button type="button" class="form__button-close">Вернуться на сайт</button>
+                <h1>Оформить заказ</h1>
+                <p class="form__data">Ваше имя</p>
+                <input class="form__input" type="text" name="Имя">
+                <p class="form__data">Номер телефона</p>
+                <div>
+                    <input class="form__input" type="text" name="Телефон">
+                    <input class="form__input checkbox" type="checkbox"><p class="checkbox-text">Свяжитесь со мной по телефону</p>
+                </div>
+                <p class="form__data">E-mail</p>
+                <input class="form__input" type="text" name="Почта">
+                <input class="form__input checkbox" type="checkbox"> Свяжитесь со мной по электронной почте
+                <textarea class="form__textarea" placeholder="Ваше сообщение"></textarea>
+                <button class="form__submit" type="submit">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+        <div class="popup partner-form">
+            <form class="form">
+                <button type="button" class="form__button-close">Вернуться на сайт</button>
+                <h1>Стать партнером</h1>
+                    <p class="form__data">Ваше имя</p>
+                    <input class="form__input" type="text">
+                    <p class="form__data">Номер телефона</p>
+                    <input class="form__input" type="text">
+                    <p class="form__data">E-mail</p>
+                    <input class="form__input" type="text">
+                <textarea class="form__textarea" placeholder="Ваше сообщение"></textarea>
+                <button class="form__submit" type="submit">ОТПРАВИТЬ</button>
+            </form>
+        </div>  
+    </body>
+</html>
